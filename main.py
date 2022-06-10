@@ -26,13 +26,8 @@ def draw_hour_hand():
 
 
 # value for numbers in clock
-val = 0
-
 # loop for print clock numbers
-for i in range(12):
-	# increment value by 1
-	val += 1
-
+for val, i in enumerate(range(12), start=1):
 	# move turtle in air
 	clk.penup()
 
